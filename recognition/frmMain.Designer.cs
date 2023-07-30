@@ -29,6 +29,7 @@ namespace recognition
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.picCapture = new System.Windows.Forms.PictureBox();
             this.btnCapture = new System.Windows.Forms.Button();
             this.btnDetectFaces = new System.Windows.Forms.Button();
@@ -162,6 +163,7 @@ namespace recognition
             this.Controls.Add(this.btnDetectFaces);
             this.Controls.Add(this.btnCapture);
             this.Controls.Add(this.picCapture);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reconnaissance faciale";
